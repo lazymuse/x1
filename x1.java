@@ -38,11 +38,40 @@ void draw() {
   x=  x + dx;
   y=  y + dy;
   
+  // show the snowman
+  snowman();
+}
+
+void snowman() {
   //// SHOW:  display the creature at (x,y)
 
   /* INSERT YOUR CODE HERE! */
   fill(255,0,0); rect( x,y, 30,50 );        /* REPLACE THIS WITH YOUR OWN CODE! */
   text( "Fred", x,y );
+  
+  ellipse(250,250,80,80);// body 1//
+  ellipse(250,325,80,80);// body 2//
+  ellipse(260,380,80,80);// body 3//
+  ellipse(250,450,80,80);// body 4//
+  line(210,240,150,200); // left arm body 1//
+  line(210,320,150,350); //left arm body 2//
+  line(290,240,350,200); //right arm body 1//
+  line(290,320,350,310); //right arm body 2//
+  
+  fill(255,255,255);
+  ellipse(250,200,60,60);// head//
+  
+  ellipse(250,180,80,20);//bottom hat//
+  rect(220,100,60,80); //top hat//
+  fill(0);
+  ellipse(230,200,10,10); // left eye//
+  fill(0);
+  ellipse(270,200,10,10);// right eye//
+  fill(204);
+  triangle(250,210,230,210,237,222); //mouth//
+  
+  
+  
 
 }
 
